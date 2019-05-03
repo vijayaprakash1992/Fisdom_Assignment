@@ -4,81 +4,149 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fisdom Assignment</title>
+    <style>
+      th, td 
+      {
+        border: 1px solid #d4cece;
+      }
+      body
+      {
+        background: whitesmoke;
+      }
+      table
+      {
+        width:100%;
+        background: white;
+        display: block;
+        margin: auto;
+      }
+      .export
+      {
+        border: 1px solid #d08600;
+        padding: 10px;
+        background: orange;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        display: block;
+        max-width: 100px;
+        margin: auto;
+        text-align: center;
+      }
+      .export:hover
+      {
+        background: #00fff3;
+        color: red;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .row
+      {
+        width: 100%;
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .col-4
+      {
+        float: left;
+        /*background: grey;*/
+        width:33.33%;
+        padding: 10px;
+      }
+      * 
+      {
+        box-sizing: border-box;
+      }
+      ::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);background-color: #F5F5F5;}
+      ::-webkit-scrollbar{ width: 8px;background-color: #F5F5F5;height: 8px;}
+      ::-webkit-scrollbar-thumb{-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);background-color: #3fb89b;border-radius: 100px;}
+      ::-webkit-scrollbar-track:hover{cursor: pointer;}
+
+    </style>
   </head>
-    <body>
+  <body>
+    <h3 style="text-align: center;">Export To Table</h3>
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <div style="overflow-x:auto;height: 400px;">
 
 
+          <table class="nav-resut-tble" border="0" cellpadding="3" cellspacing="0" style="margin-top: 0px;"><tbody><tr><th colspan="4">Historical NAV for a period From 01-Feb-2019 to 30-Apr-2019</th></tr><tr style="background-color: rgb(240, 240, 240);"><th colspan="4" class="txt-lft"> HDFC Mutual Fund</th></tr><tr><th colspan="4" class="txt-lft"> HDFC Index FundSensex Plan( FV Rs 32.161)</th></tr><tr><th colspan="4" class="txt-lft"> HDFC Index Fund Sensex Plan-Direct Plan</th></tr><tr><th width="25%">Net Asset Value</th><th width="25%">Repurchase Price</th><th width="25%">Sale Price</th><th width="25%">NAV date</th></tr><tr style="background-color: rgb(240, 240, 240);"><td>325.8021</td><td></td><td></td><td>01-Feb-2019</td></tr><tr><td>326.8109</td><td></td><td></td><td>04-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>327.1201</td><td></td><td></td><td>05-Feb-2019</td></tr><tr><td>330.4174</td><td></td><td></td><td>06-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>330.3796</td><td></td><td></td><td>07-Feb-2019</td></tr><tr><td>326.5889</td><td></td><td></td><td>08-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>325.2961</td><td></td><td></td><td>11-Feb-2019</td></tr><tr><td>323.1392</td><td></td><td></td><td>12-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>322.0705</td><td></td><td></td><td>13-Feb-2019</td></tr><tr><td>320.661</td><td></td><td></td><td>14-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>320.0582</td><td></td><td></td><td>15-Feb-20"19</td></tr><tr><td>317.2869</td><td></td><td></td><td>18-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>315.9844</td><td></td><td></td><td>19-Feb-2019</td></tr><tr><td>319.5876</td><td></td><td></td><td>20-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>320.8523</td><td></td><td></td><td>21-Feb-2019</td></tr><tr><td>320.6109</td><td></td><td></td><td>22-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>323.6632</td><td></td><td></td><td>25-Feb-2019</td></tr><tr><td>321.5226</td><td></td><td></td><td>26-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>320.9122</td><td></td><td></td><td>27-Feb-2019</td></tr><tr><td>320.7024</td><td></td><td></td><td>28-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>322.4521</td><td></td><td></td><td>01-Mar-2019</td></tr><tr><td>325.8241</td><td></td><td></td><td>05-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>327.547</td><td></td><td></td><td>06-Mar-2019</td></tr><tr><td>328.3392</td><td></td><td></td><td>07-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>327.8566</td><td></td><td></td><td>08-Mar-2019</td></tr><tr><td>331.27</td><td></td><td></td><td>11-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>335.561</td><td></td><td></td><td>12-Mar-2019</td></tr><tr><td>337.5211</td><td></td><td></td><td>13-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>337.6579</td><td></td><td></td><td>14-Mar-2019</td></tr><tr><td>340.1164</td><td></td><td></td><td>15-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>340.7458</td><td></td><td></td><td>18-Mar-2019</td></tr><tr><td>343.1384</td><td></td><td></td><td>19-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>343.3452</td><td></td><td></td><td>20-Mar-2019</td></tr><tr><td>341.4319</td><td></td><td></td><td>22-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>338.2529</td><td></td><td></td><td>25-Mar-2019</td></tr><tr><td>342.0691</td><td></td><td></td><td>26-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>341.1717</td><td></td><td></td><td>27-Mar-2019</td></tr><tr><td>344.8516</td><td></td><td></td><td>28-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>345.966</td><td></td><td></td><td>29-Mar-2019</td></tr><tr><td>347.7429</td><td></td><td></td><td>01-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>349.3907</td><td></td><td></td><td>02-Apr-2019</td></tr><tr><td>347.7885</td><td></td><td></td><td>03-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>346.069</td><td></td><td></td><td>04-Apr-2019</td></tr><tr><td>347.6518</td><td></td><td></td><td>05-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>346.206</td><td></td><td></td><td>08-Apr-2019</td></tr><tr><td>348.3268</td><td></td><td></td><td>09-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>345.1649</td><td></td><td></td><td>10-Apr-2019</td></tr><tr><td>345.3557</td><td></td><td></td><td>11-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>346.7847</td><td></td><td></td><td>12-Apr-2019</td></tr><tr><td>348.0178</td><td></td><td></td><td>15-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>351.309</td><td></td><td></td><td>16-Apr-2019</td></tr><tr><td>350.0984</td><td></td><td></td><td>18-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>345.6808</td><td></td><td></td><td>22-Apr-2019</td></tr><tr><td>344.9591</td><td></td><td></td><td>23-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>349.3358</td><td></td><td></td><td>24-Apr-2019</td></tr><tr><td>346.4334</td><td></td><td></td><td>25-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>349.4375</td><td></td><td></td><td>26-Apr-2019</td></tr></tbody></table>
 
-      <table class="nav-resut-tble" border="0" cellpadding="0" cellspacing="0" style="margin-top: 0px;"><tbody><tr><th colspan="4">Historical NAV for a period From 01-Feb-2019 to 30-Apr-2019</th></tr><tr style="background-color: rgb(240, 240, 240);"><th colspan="4" class="txt-lft"> HDFC Mutual Fund</th></tr><tr><th colspan="4" class="txt-lft"> HDFC Index FundSensex Plan( FV Rs 32.161)</th></tr><tr><th colspan="4" class="txt-lft"> HDFC Index Fund Sensex Plan-Direct Plan</th></tr><tr><th width="25%">Net Asset Value</th><th width="25%">Repurchase Price</th><th width="25%">Sale Price</th><th width="25%">NAV date</th></tr><tr style="background-color: rgb(240, 240, 240);"><td>325.8021</td><td></td><td></td><td>01-Feb-2019</td></tr><tr><td>326.8109</td><td></td><td></td><td>04-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>327.1201</td><td></td><td></td><td>05-Feb-2019</td></tr><tr><td>330.4174</td><td></td><td></td><td>06-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>330.3796</td><td></td><td></td><td>07-Feb-2019</td></tr><tr><td>326.5889</td><td></td><td></td><td>08-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>325.2961</td><td></td><td></td><td>11-Feb-2019</td></tr><tr><td>323.1392</td><td></td><td></td><td>12-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>322.0705</td><td></td><td></td><td>13-Feb-2019</td></tr><tr><td>320.661</td><td></td><td></td><td>14-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>320.0582</td><td></td><td></td><td>15-Feb-20"19</td></tr><tr><td>317.2869</td><td></td><td></td><td>18-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>315.9844</td><td></td><td></td><td>19-Feb-2019</td></tr><tr><td>319.5876</td><td></td><td></td><td>20-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>320.8523</td><td></td><td></td><td>21-Feb-2019</td></tr><tr><td>320.6109</td><td></td><td></td><td>22-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>323.6632</td><td></td><td></td><td>25-Feb-2019</td></tr><tr><td>321.5226</td><td></td><td></td><td>26-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>320.9122</td><td></td><td></td><td>27-Feb-2019</td></tr><tr><td>320.7024</td><td></td><td></td><td>28-Feb-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>322.4521</td><td></td><td></td><td>01-Mar-2019</td></tr><tr><td>325.8241</td><td></td><td></td><td>05-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>327.547</td><td></td><td></td><td>06-Mar-2019</td></tr><tr><td>328.3392</td><td></td><td></td><td>07-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>327.8566</td><td></td><td></td><td>08-Mar-2019</td></tr><tr><td>331.27</td><td></td><td></td><td>11-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>335.561</td><td></td><td></td><td>12-Mar-2019</td></tr><tr><td>337.5211</td><td></td><td></td><td>13-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>337.6579</td><td></td><td></td><td>14-Mar-2019</td></tr><tr><td>340.1164</td><td></td><td></td><td>15-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>340.7458</td><td></td><td></td><td>18-Mar-2019</td></tr><tr><td>343.1384</td><td></td><td></td><td>19-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>343.3452</td><td></td><td></td><td>20-Mar-2019</td></tr><tr><td>341.4319</td><td></td><td></td><td>22-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>338.2529</td><td></td><td></td><td>25-Mar-2019</td></tr><tr><td>342.0691</td><td></td><td></td><td>26-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>341.1717</td><td></td><td></td><td>27-Mar-2019</td></tr><tr><td>344.8516</td><td></td><td></td><td>28-Mar-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>345.966</td><td></td><td></td><td>29-Mar-2019</td></tr><tr><td>347.7429</td><td></td><td></td><td>01-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>349.3907</td><td></td><td></td><td>02-Apr-2019</td></tr><tr><td>347.7885</td><td></td><td></td><td>03-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>346.069</td><td></td><td></td><td>04-Apr-2019</td></tr><tr><td>347.6518</td><td></td><td></td><td>05-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>346.206</td><td></td><td></td><td>08-Apr-2019</td></tr><tr><td>348.3268</td><td></td><td></td><td>09-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>345.1649</td><td></td><td></td><td>10-Apr-2019</td></tr><tr><td>345.3557</td><td></td><td></td><td>11-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>346.7847</td><td></td><td></td><td>12-Apr-2019</td></tr><tr><td>348.0178</td><td></td><td></td><td>15-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>351.309</td><td></td><td></td><td>16-Apr-2019</td></tr><tr><td>350.0984</td><td></td><td></td><td>18-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>345.6808</td><td></td><td></td><td>22-Apr-2019</td></tr><tr><td>344.9591</td><td></td><td></td><td>23-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>349.3358</td><td></td><td></td><td>24-Apr-2019</td></tr><tr><td>346.4334</td><td></td><td></td><td>25-Apr-2019</td></tr><tr style="background-color: rgb(240, 240, 240);"><td>349.4375</td><td></td><td></td><td>26-Apr-2019</td></tr></tbody></table>
-
-
+        </div>
+      </div>
+      <div class="col-4"></div>
+    </div>
     <a class="export">EXPORT</a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function() 
     {
-        /*
-        *
-        * @filename is name of the file given to download
-        *********************/
-      	function export2CSV(filename) 
-      	{
-        	var tableData = $('table').find('tr:has(td)'),  // Find The Table Content
-        	columnDelimiter = '","',                        //Column Split For CSV Format
-        	rowDelimiter = '"\r\n"',                        //Row Split For CSV Format
-          csvData = '"';
+      /*
+      *
+      * @filename is name of the file given to download
+      *********************/
+    	function export2CSV(filename) 
+    	{
+      	var tableData = $('table').find('tr:has(td)'),  // Find The Table Content
+      	columnDelimiter = '","',                        //Column Split For CSV Format
+      	rowDelimiter = '"\r\n"',                        //Row Split For CSV Format
+        csvData = '"';
 
-          $.each(tableData,function(index_row,row_value)  //Traverse Through Each Row
-          {
-            var row = $(row_value),cols = row.find('td'); //Find Only Table Body Contents From Each Row
-            $.each(cols,function(index_col,col_value)     //Traverse Through Each Column
-            {
-              if(index_col > 0)
-              {
-                csvData += columnDelimiter;               //Add Column Split To String
-              }
-              var col = $(col_value), text = col.text();
-              text = text.replace(/"/g, '');              //Clear Double Quotes Found In The Text
-              csvData += text;
-            });
-            if(index_row<tableData.length-1)
-            {
-              csvData += rowDelimiter;                    //Add Row Split To String
-            }
-          });
-          csvData += '"';
-          download(csvData,filename,'csv');               
-      	}
-
-
-        /*
-        *
-        * @csv is the table data in string concatenated with column and row delimiter
-        * @filename is name of the file given to download for export
-        * @type is extension for downloading with specific MIME type
-        *********************/
-        function download(csv, filename,type) 
+        $.each(tableData,function(index_row,row_value)  //Traverse Through Each Row
         {
-          var csvFile,downloadLink;
-          csvFile = new Blob([csv], {type: "text/"+type});
-          downloadLink = document.createElement("a");
-          downloadLink.download = filename;
-          downloadLink.href = window.URL.createObjectURL(csvFile);
-          downloadLink.style.display = "none";
-          document.body.appendChild(downloadLink);
-          downloadLink.click();
-        }
+          var row = $(row_value),cols = row.find('td'); //Find Only Table Body Contents From Each Row
+          $.each(cols,function(index_col,col_value)     //Traverse Through Each Column
+          {
+            if(index_col > 0)
+            {
+              csvData += columnDelimiter;               //Add Column Split To String
+            }
+            var col = $(col_value), text = col.text();
+            text = text.replace(/"/g, '');              //Clear Double Quotes Found In The Text
+            csvData += text;
+          });
+          if(index_row<tableData.length-1)
+          {
+            csvData += rowDelimiter;                    //Add Row Split To String
+          }
+        });
+        csvData += '"';
+        download(csvData,filename,'csv');               
+    	}
 
 
-        /*
-        *
-        * Export Click Event Action
-        *********************/
-      	$(".export").on('click', function() 
-      	{
-        	export2CSV('export.csv');
-      	});
+      /*
+      *
+      * @csv is the table data in string concatenated with column and row delimiter
+      * @filename is name of the file given to download for export
+      * @type is extension for downloading with specific MIME type
+      *********************/
+      function download(csv, filename,type) 
+      {
+        var csvFile,downloadLink;
+        csvFile = new Blob([csv], {type: "text/"+type});
+        downloadLink = document.createElement("a");
+        downloadLink.download = filename;
+        downloadLink.href = window.URL.createObjectURL(csvFile);
+        downloadLink.style.display = "none";
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+      }
+
+
+      /*
+      *
+      * Export Click Event Action
+      *********************/
+    	$(".export").on('click', function() 
+    	{
+      	export2CSV('export.csv');
+    	});
     });
     </script>
   </body> 
